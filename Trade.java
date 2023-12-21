@@ -22,8 +22,11 @@ public class Trade{
         }
         for(String lines: intFile){
             //System.out.println(lines);
-            String[] intValues=lines.split(",");//split the line into int values
-            int[]
+            String[] splitValues=lines.split(",");//split the line into int values
+            for(String eachValue: splitValues){
+                int intValue=Integer.parseInt(eachValue);// converts the string numbers to int
+            }
+            //int[] intValues=Integer.parseInt(splitValues);
         }
         
     }
