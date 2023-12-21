@@ -21,7 +21,9 @@ public class Trade{
             }
         }
         for(String lines: intFile){
-            System.out.println(lines);
+            //System.out.println(lines);
+            String[] intValues=lines.split(",");//split the line into int values
+            int[]
         }
         
     }
