@@ -9,11 +9,11 @@ public class Trade{
         try{
             File file=new File(fileName);
             scanner=new Scanner(file);
-            while(scanner.hasNextLine()){
+            while(scanner.hasNextLine()){//go throught the file until there is no longer a line
                 intFile.add(scanner.nextLine());
 
             }
-        }catch(FileNotFoundException e){
+        }catch(FileNotFoundException e){//exception for when the file is not found
             System.out.println("File not found Askies");
         }finally{
             if(scanner!=null){
